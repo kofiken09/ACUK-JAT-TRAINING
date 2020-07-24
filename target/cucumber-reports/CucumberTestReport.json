@@ -1,0 +1,140 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 8,
+        "name": "search result page contains search query",
+        "description": "",
+        "id": "google-search;search-result-page-contains-search-query",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7796699500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am on google search page",
+            "match": {
+              "location": "Loginsteps.i_am_on_google_search_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 260383300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I search for \"cucumber\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cucumber",
+                  "offset": 14
+                }
+              ],
+              "location": "Loginsteps.i_search_for(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3837700,
+              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat stepdefinition.Loginsteps.the_page_title_should_contain(Loginsteps.java:42)\r\n\tat ✽.Then the page title should contain \"cucumber\"(login.feature:11)\r\n",
+              "status": "pending"
+            },
+            "line": 11,
+            "name": "the page title should contain \"cucumber\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cucumber",
+                  "offset": 31
+                }
+              ],
+              "location": "Loginsteps.the_page_title_should_contain(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Google first result description contains searched query",
+        "description": "",
+        "id": "google-search;google-first-result-description-contains-searched-query",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7700817700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I am on google search page",
+            "match": {
+              "location": "Loginsteps.i_am_on_google_search_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 204869800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I search for \"Java\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Java",
+                  "offset": 14
+                }
+              ],
+              "location": "Loginsteps.i_search_for(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 642000,
+              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat stepdefinition.Loginsteps.the_first_line_on_the_result_page_should_contain(Loginsteps.java:48)\r\n\tat ✽.Then the first line on the result page should contain \"Java\"(login.feature:16)\r\n",
+              "status": "pending"
+            },
+            "line": 16,
+            "name": "the first line on the result page should contain \"Java\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Java",
+                  "offset": 50
+                }
+              ],
+              "location": "Loginsteps.the_first_line_on_the_result_page_should_contain(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Google Search",
+    "description": "As a web user\r\nI want to find information on google\r\nso that I get a better understanding of the topic",
+    "id": "google-search",
+    "keyword": "Feature",
+    "uri": "login.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Googlesearch"
+      },
+      {
+        "line": 1,
+        "name": "@test"
+      }
+    ]
+  }
+]
